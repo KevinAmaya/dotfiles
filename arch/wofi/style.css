@@ -1,0 +1,33 @@
+window {
+    background-color: #2c2721;
+    border: 2px solid #7C94C5;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4); 
+    border-radius: 10px;
+    border: 2px solid rgba(108, 112, 134, 0.5);
+    border-radius: 10px;
+}
+#input {
+    background-color: #2c2721;
+    color: #c2d1e5;
+    border: none;
+    outline: none;
+    font-size: 18px;    
+    padding: 12px 16px;
+    min-height: 48px; 
+    border-radius: 8px;
+}
+#entry {
+    padding: 12px 16px;
+    margin: 6px 0;
+    border-radius: 6px;
+}
+#entry:selected {
+    background-color: #8C8E94;
+    color: #2c2721;
+}
+#text {
+    color: #c2d1e5;
+}
+#text:selected {
+    color: #2c2721;
+}
