@@ -4,8 +4,7 @@ return {
     "nvim-treesitter/nvim-treesitter-textobjects",
   },
   build = ":TSUpdate",
-  config = function()
-    require("nvim-treesitter.configs").setup({
+  opts = {
       ensure_installed = {
         "c", "lua", "vim", "vimdoc", "query", "markdown",
         "markdown_inline", "json", "javascript", "html", "htmldjango",
@@ -43,6 +42,5 @@ return {
           include_surrounding_whitespace = true,
         },
       },
-    })
-  end
+    }
 }
