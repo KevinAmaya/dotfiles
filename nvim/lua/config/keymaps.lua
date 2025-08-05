@@ -1,13 +1,6 @@
 vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, {})
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, {})
 
-vim.keymap.set("n", "<leader>e", function()
-	vim.cmd("vsplit")
-	vim.cmd("vertical resize 30") -- set width of the new split
-	vim.cmd("Dirbuf")
-end, { desc = "Open Dirbuf in narrow split" })
-
--- Helper to get the window to the right
 local function get_right_win()
 	local current_win = vim.api.nvim_get_current_win()
 	local right_win = nil
